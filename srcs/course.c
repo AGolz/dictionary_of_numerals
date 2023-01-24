@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush02_course.c                                    :+:      :+:    :+:   */
+/*   course.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaksimo <emaksimo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 04:09:09 by emaksimo          #+#    #+#             */
-/*   Updated: 2022/10/19 00:00:43 by emaksimo         ###   ########.fr       */
+/*   Updated: 2023/01/24 17:24:20 by emaksimo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	dict_error(void)
 {
-	write(1, "(＃＞＜) Dict error\n", 24);
+	write(1, "\n(＃＞＜) Dict error\n\n", 26);
 	exit (1);
 }
 
@@ -28,7 +28,7 @@ char	*ft_get_nbr(int fd)
 	str = malloc(sizeof(char) * 128);
 	if (!str)
 	{
-		write(1, "Error (×﹏×)\n", 17);
+		write(1, "\nError (×﹏×)\n\n", 20);
 		exit (1);
 	}
 	i = 0;
@@ -51,8 +51,10 @@ char	*ft_get_str(int fd, char *ch)
 
 	str = malloc(sizeof(char) * 128);
 	if (!str)
-		write(1, "Error (×﹏×)\n", 17);
+	{
+		write(1, "\nError (×﹏×)\n\n", 20);
 		exit (1);
+	}
 	i = 0;
 	while (ch[0] != '\n')
 	{
@@ -89,7 +91,7 @@ t_list	*course(char *file)
 	t_list	*tab;
 
 	fd = open(file, O_RDONLY);
-	tab = malloc(sizeof(t_list) * 42);
+	tab = malloc(sizeof(t_list) * 40);
 	if (fd == -1 || !tab)
 		dict_error();
 	i = 0;

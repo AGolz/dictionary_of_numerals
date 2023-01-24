@@ -6,7 +6,7 @@
 /*   By: emaksimo <emaksimo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 02:52:46 by emaksimo          #+#    #+#             */
-/*   Updated: 2022/10/18 23:15:07 by emaksimo         ###   ########.fr       */
+/*   Updated: 2023/01/24 16:21:59 by emaksimo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	f1(char	**argv, unsigned long long *fst, t_list *tab)
 {
 	if (str_is_num(argv[1]) == 1)
 	{
-		write(1, "Error (×﹏×)\n", 17);
+		write(1, "\nError (×﹏×)\n\n", 20);
 		return (0);
 	}
 	tab = course(DICTIONARY);
@@ -53,7 +53,7 @@ int	f2(char	**argv, unsigned long long *fst, t_list *tab)
 {
 	if (str_is_num(argv[2]) == 1)
 	{
-		write(1, "Error (×﹏×)\n", 17);
+		write(1, "\nError (×﹏×)\n\n", 20);
 		return (0);
 	}
 	tab = course(argv[1]);
@@ -79,7 +79,7 @@ int	main(int argc, char **argv)
 	tab = NULL;
 	if (argc < 2 || argc > 3)
 	{
-		write(1, "┐(￣ヘ￣)┌ Sorry, I need one or two arguments...\n", 57);
+		write(1, "\n┐(￣ヘ￣)┌ Sorry, I need one or two arguments...\n\n", 59);
 		return (0);
 	}
 	if (argc == 2)

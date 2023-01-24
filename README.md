@@ -17,11 +17,11 @@ The program can receive up to 2 command line arguments：
 
 - If the number of command line arguments is one `./numbers_dict 178920000`, then the argument is a converted number.
 
-<img width="481" alt="Screen Shot 2023-01-24 at 7 22 31 PM" src="https://user-images.githubusercontent.com/51645091/214334657-00055275-550b-4a7c-a5dc-609cfb444545.png">
+<img width="525" alt="Screen Shot 2023-01-24 at 8 08 54 PM" src="https://user-images.githubusercontent.com/51645091/214346455-389d75b2-45be-49d5-b27d-df21f035217b.png">
 
 - If there are 2 command line arguments `./numbers_dict numbers.dict 178920000`, the 1st argument is the name of the new dictionary, the 2nd argument is the value that needs to be converted.
 
-<img width="573" alt="Screen Shot 2023-01-24 at 7 25 04 PM" src="https://user-images.githubusercontent.com/51645091/214335271-678b7c1d-9ff0-4d1b-9d1f-cd9621c359cf.png">
+<img width="640" alt="Screen Shot 2023-01-24 at 8 15 30 PM" src="https://user-images.githubusercontent.com/51645091/214347719-007b4739-8e47-4bc1-9525-dc1fa56976bc.png">
 
 The program uses a dictionary (numbers.dict) as a project resource.
 

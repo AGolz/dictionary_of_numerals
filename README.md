@@ -32,7 +32,7 @@ The program uses a dictionary (numbers.dict) as a project resource.
 You can connect any other dictionaries written using the numbers.edit template:
 
 ```
-[a number][0 spaces]:[0 spaces][any printable characters]\n
+[a number][0 to n spaces]:[0 to n spaces][any printable characters]\n
 ```
 
 for example:

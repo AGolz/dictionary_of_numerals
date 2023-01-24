@@ -36,7 +36,7 @@ for example:
 18: dix-huit\n
 ```
 
-**each line in the dictionary must necessarily end with `/n`**
+**each line in the dictionary must necessarily end with `\n`**
 
 This project was created during the [school 42](https://www.42.fr) training program and helps to delve into the problem of storing numeric values exceeding the size of the maximum `int` and transmitted to the program by a `char` type string.
 

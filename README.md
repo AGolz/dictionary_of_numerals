@@ -11,17 +11,21 @@ $>make
 Making Numbers_dict2...
 numbers_dict
 ```
-The makefile also contains the rules clean - delete object files, fclean - delete everything executable file, including , and re - delete everything, including executable file and compile again.
+The makefile also contains the rules `clean` - delete object files, `fclean` - delete everything executable file, including , and `re` - delete everything, including executable file and compile again.
 
 The program can receive up to 2 command line arguments：
 
 - If the number of command line arguments is one `./numbers_dict 178920000`, then the argument is a converted number.
 
+<p align="center">
 <img width="525" alt="Screen Shot 2023-01-24 at 8 08 54 PM" src="https://user-images.githubusercontent.com/51645091/214346455-389d75b2-45be-49d5-b27d-df21f035217b.png">
+</p>
 
 - If there are 2 command line arguments `./numbers_dict numbers.dict 178920000`, the 1st argument is the name of the new dictionary, the 2nd argument is the value that needs to be converted.
 
+<p align="center">
 <img width="640" alt="Screen Shot 2023-01-24 at 8 15 30 PM" src="https://user-images.githubusercontent.com/51645091/214347719-007b4739-8e47-4bc1-9525-dc1fa56976bc.png">
+</p>
 
 The program uses a dictionary (numbers.dict) as a project resource.
 

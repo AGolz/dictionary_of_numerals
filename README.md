@@ -8,7 +8,7 @@ A program that takes a number from a command-line argument and convert it to a s
 
 ```
 $>make
-Making Numbers_dict2...
+Making Numbers_dict...
 numbers_dict
 ```
 The makefile also contains the rules `clean` - delete object files, `fclean` - delete everything executable file, including , and `re` - delete everything, including executable file and compile again.
